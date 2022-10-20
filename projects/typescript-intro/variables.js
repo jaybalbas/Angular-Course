@@ -18,3 +18,18 @@ var account = {
 // let accounts: {}[]; // store array "[]" of objects "{}"
 // Interface method
 var accounts;
+// use "implements" if wanna use interface
+var InvestmentAccount = /** @class */ (function () {
+    // name;
+    // balance;
+    // We can use constructor to initialize properties
+    // Use "public" if wanna have access to properties outside of class (public by default)
+    function InvestmentAccount(name, balance) {
+        this.name = name;
+        this.balance = balance;
+    }
+    // "private" can only be used within the class
+    InvestmentAccount.prototype.withdraw = function () {
+    };
+    return InvestmentAccount;
+}());
