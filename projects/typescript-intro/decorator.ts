@@ -1,3 +1,4 @@
+// Decorator
 function MenuItem(itemID: string) { // classes have "Function" type
     return (target: Function) => {
         target.prototype.id = itemID;
